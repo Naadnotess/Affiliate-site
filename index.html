@@ -3,81 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Best Product Deals</title>
+  <title>Best Product Deals | Top Tech & Gadgets</title>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      background: #f5f6f8;
-      color: #333;
+      background: #f0f2f5;
+      color: #1a1a1a;
+      line-height: 1.6;
     }
     header {
       background: #111827;
       color: #fff;
-      padding: 16px;
+      padding: 30px 16px;
       text-align: center;
     }
-    header h1 { margin: 0; }
-    header p { margin: 6px 0 0; font-size: 14px; color: #d1d5db; }
+    header h1 { margin: 0; font-size: 2rem; }
+    header p { margin: 8px 0 0; font-size: 14px; color: #9ca3af; }
 
     nav {
       display: flex;
       justify-content: center;
-      gap: 16px;
-      background: #1f2933;
-      padding: 10px;
+      gap: 20px;
+      background: #1f2937;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     nav a {
       color: #fff;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 15px;
+      font-weight: 500;
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
-      padding: 20px;
+      padding: 30px 20px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
     }
 
     .card {
       background: #fff;
-      border-radius: 10px;
-      padding: 16px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-      text-align: center;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      transition: transform 0.2s;
     }
+    .card:hover { transform: translateY(-5px); }
 
-    .card h2 { margin-top: 0; font-size: 1.2rem; }
-    .card p { font-size: 14px; color: #555; flex-grow: 1; }
+    .card h2 { margin-top: 0; font-size: 1.25rem; color: #111827; }
+    .card p { font-size: 14px; color: #4b5563; flex-grow: 1; }
 
     .btn {
       display: block;
-      margin: 5px 0;
-      padding: 10px;
-      border-radius: 6px;
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 8px;
       text-decoration: none;
       color: #fff;
       font-weight: bold;
-      font-size: 14px;
+      text-align: center;
+      transition: opacity 0.2s;
     }
+    .btn:hover { opacity: 0.9; }
+
     .buy { background: #f97316; }
     .review { background: #2563eb; }
-    .compare { background: #16a34a; }
+    .compare { background: #059669; }
 
     footer {
       background: #111827;
-      color: #d1d5db;
+      color: #9ca3af;
       text-align: center;
-      padding: 20px;
+      padding: 30px 16px;
       font-size: 13px;
-      margin-top: 40px;
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -85,63 +93,63 @@
 
 <header>
   <h1>Best Product Deals</h1>
-  <p>Honest reviews • Trusted affiliate links</p>
+  <p>Expert reviews • Handpicked affiliate links</p>
 </header>
 
 <nav>
   <a href="index.html">Home</a>
   <a href="#">Top Picks</a>
-  <a href="reviews.html">Reviews</a>
+  <a href="reviews.html">All Reviews</a>
   <a href="#">Contact</a>
 </nav>
 
-<section class="container">
+<main class="container">
 
   <div class="card">
-    <h2>Boat Airdopes 141 Bluetooth Earbuds</h2>
-    <p>Boat Airdopes 141 offers long battery life, fast charging, and powerful bass. A good choice for daily use under budget.</p>
-    <a href="PASTE_YOUR_LINK_HERE" target="_blank" class="btn buy">Check Price</a>
-    <a href="boat-airdopes-141.html" class="btn review">Read Review</a>
-    <a href="#" class="btn compare">Compare</a>
+    <h2>Boat Airdopes 141</h2>
+    <p>Incredible 42-hour battery life and ENx technology for clear calls. The best-selling budget earbuds for a reason.</p>
+    <a href="PASTE_AMAZON_LINK_HERE" target="_blank" class="btn buy">Check Price on Amazon</a>
+    <a href="boat-airdopes-141.html" class="btn review">Read Full Review</a>
+    <a href="#" class="btn compare">Compare Specs</a>
   </div>
 
   <div class="card">
-    <h2>Noise Pulse 2 Max Smartwatch</h2>
-    <p>Massive 1.85" display, 10 days of battery life, and smart calling features. The top-rated budget smartwatch right now.</p>
-    <a href="PASTE_YOUR_LINK_HERE" target="_blank" class="btn buy">Check Price</a>
-    <a href="#" class="btn review">Read Review</a>
-    <a href="#" class="btn compare">Compare</a>
+    <h2>Noise Pulse 2 Max</h2>
+    <p>Massive 1.85" display with 550 nits brightness. Features BT calling and 100+ sports modes.</p>
+    <a href="PASTE_AMAZON_LINK_HERE" target="_blank" class="btn buy">Check Price on Amazon</a>
+    <a href="#" class="btn review">Read Full Review</a>
+    <a href="#" class="btn compare">Compare Specs</a>
   </div>
 
   <div class="card">
     <h2>Mi Power Bank 3i 20000mAh</h2>
-    <p>Triple output ports with 18W fast charging. Best for long trips and charging multiple devices simultaneously.</p>
-    <a href="PASTE_YOUR_LINK_HERE" target="_blank" class="btn buy">Check Price</a>
-    <a href="#" class="btn review">Read Review</a>
-    <a href="#" class="btn compare">Compare</a>
+    <p>High-capacity battery with 18W fast charging and triple port output. Safe and durable for long travel.</p>
+    <a href="PASTE_AMAZON_LINK_HERE" target="_blank" class="btn buy">Check Price on Amazon</a>
+    <a href="#" class="btn review">Read Full Review</a>
+    <a href="#" class="btn compare">Compare Specs</a>
   </div>
 
   <div class="card">
-    <h2>SanDisk Ultra 128GB MicroSD</h2>
-    <p>Transfer speeds up to 120MB/s. Reliable storage for smartphones, tablets, and cameras.</p>
-    <a href="PASTE_YOUR_LINK_HERE" target="_blank" class="btn buy">Check Price</a>
-    <a href="#" class="btn review">Read Review</a>
-    <a href="#" class="btn compare">Compare</a>
+    <h2>SanDisk Ultra 128GB</h2>
+    <p>A1-rated for faster app performance and Full HD video recording. The most reliable storage for your phone.</p>
+    <a href="PASTE_AMAZON_LINK_HERE" target="_blank" class="btn buy">Check Price on Amazon</a>
+    <a href="#" class="btn review">Read Full Review</a>
+    <a href="#" class="btn compare">Compare Specs</a>
   </div>
 
   <div class="card">
-    <h2>TP-Link AC750 WiFi Extender</h2>
-    <p>Boosts Internet WiFi coverage up to 1200 Sq.ft. Easy setup to eliminate dead zones in your home.</p>
-    <a href="PASTE_YOUR_LINK_HERE" target="_blank" class="btn buy">Check Price</a>
-    <a href="#" class="btn review">Read Review</a>
-    <a href="#" class="btn compare">Compare</a>
+    <h2>TP-Link AC750 Extender</h2>
+    <p>Instantly boost your WiFi range and eliminate dead zones. Dual-band technology for stable connections.</p>
+    <a href="PASTE_AMAZON_LINK_HERE" target="_blank" class="btn buy">Check Price on Amazon</a>
+    <a href="#" class="btn review">Read Full Review</a>
+    <a href="#" class="btn compare">Compare Specs</a>
   </div>
 
-</section>
+</main>
 
 <footer>
-  <p>Disclosure: This website contains affiliate links. We may earn a commission at no extra cost to you.</p>
-  <p>&copy; 2026 Best Product Deals</p>
+  <p><strong>Disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases. This helps support the site at no extra cost to you.</p>
+  <p>&copy; 2026 Best Product Deals • India Tech Guides</p>
 </footer>
 
 </body>
