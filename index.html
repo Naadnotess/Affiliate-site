@@ -49,19 +49,23 @@
       padding: 16px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.08);
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    .card h2 { margin-top: 0; }
-    .card p { font-size: 14px; color: #555; }
+    .card h2 { margin-top: 0; font-size: 1.2rem; }
+    .card p { font-size: 14px; color: #555; flex-grow: 1; }
 
     .btn {
       display: block;
-      margin: 10px 0;
+      margin: 5px 0;
       padding: 10px;
       border-radius: 6px;
       text-decoration: none;
       color: #fff;
       font-weight: bold;
+      font-size: 14px;
     }
     .buy { background: #f97316; }
     .review { background: #2563eb; }
@@ -71,8 +75,9 @@
       background: #111827;
       color: #d1d5db;
       text-align: center;
-      padding: 14px;
+      padding: 20px;
       font-size: 13px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -84,56 +89,59 @@
 </header>
 
 <nav>
-  <a href="#">Home</a>
+  <a href="index.html">Home</a>
   <a href="#">Top Picks</a>
-  <a href="#">Reviews</a>
+  <a href="reviews.html">Reviews</a>
   <a href="#">Contact</a>
 </nav>
 
 <section class="container">
 
-  <!-- PRODUCT CARD -->
   <div class="card">
     <h2>Boat Airdopes 141 Bluetooth Earbuds</h2>
-
-    <p>
-      Boat Airdopes 141 offers long battery life, fast charging,
-      and powerful bass. A good choice for daily use under budget.
-    </p>
-
-    <a href="https://www.amazon.in/" target="_blank" class="btn buy">
-      Check Price
-    </a>
-
-    <a href="boat-airdopes-141.html" class="btn review">
-      Read Review
-    </a>
-
-    <a href="#" class="btn compare">
-      Compare
-    </a>
+    <p>Boat Airdopes 141 offers long battery life, fast charging, and powerful bass. A good choice for daily use under budget.</p>
+    <a href="PASTE_YOUR_LINK_HERE" target="_blank" class="btn buy">Check Price</a>
+    <a href="boat-airdopes-141.html" class="btn review">Read Review</a>
+    <a href="#" class="btn compare">Compare</a>
   </div>
+
   <div class="card">
     <h2>Noise Pulse 2 Max Smartwatch</h2>
-    <p>
-      Massive 1.85" display, 10 days of battery life, and smart calling features. 
-      The top-rated budget smartwatch right now.
-    </p>
-    <a href="INSERT_YOUR_LINK_HERE" target="_blank" class="btn buy">
-      Check Price
-    </a>
-    <a href="#" class="btn review">
-      Read Review
-    </a>
-    <a href="#" class="btn compare">
-      Compare
-    </a>
+    <p>Massive 1.85" display, 10 days of battery life, and smart calling features. The top-rated budget smartwatch right now.</p>
+    <a href="PASTE_YOUR_LINK_HERE" target="_blank" class="btn buy">Check Price</a>
+    <a href="#" class="btn review">Read Review</a>
+    <a href="#" class="btn compare">Compare</a>
+  </div>
+
+  <div class="card">
+    <h2>Mi Power Bank 3i 20000mAh</h2>
+    <p>Triple output ports with 18W fast charging. Best for long trips and charging multiple devices simultaneously.</p>
+    <a href="PASTE_YOUR_LINK_HERE" target="_blank" class="btn buy">Check Price</a>
+    <a href="#" class="btn review">Read Review</a>
+    <a href="#" class="btn compare">Compare</a>
+  </div>
+
+  <div class="card">
+    <h2>SanDisk Ultra 128GB MicroSD</h2>
+    <p>Transfer speeds up to 120MB/s. Reliable storage for smartphones, tablets, and cameras.</p>
+    <a href="PASTE_YOUR_LINK_HERE" target="_blank" class="btn buy">Check Price</a>
+    <a href="#" class="btn review">Read Review</a>
+    <a href="#" class="btn compare">Compare</a>
+  </div>
+
+  <div class="card">
+    <h2>TP-Link AC750 WiFi Extender</h2>
+    <p>Boosts Internet WiFi coverage up to 1200 Sq.ft. Easy setup to eliminate dead zones in your home.</p>
+    <a href="PASTE_YOUR_LINK_HERE" target="_blank" class="btn buy">Check Price</a>
+    <a href="#" class="btn review">Read Review</a>
+    <a href="#" class="btn compare">Compare</a>
   </div>
 
 </section>
 
 <footer>
-  Disclosure: This website contains affiliate links. We may earn a commission at no extra cost to you.
+  <p>Disclosure: This website contains affiliate links. We may earn a commission at no extra cost to you.</p>
+  <p>&copy; 2026 Best Product Deals</p>
 </footer>
 
 </body>
