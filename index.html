@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Best Product Deals</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f6f8;
+      color: #333;
+    }
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 16px;
+      text-align: center;
+    }
+    header h1 { margin: 0; }
+    header p { margin: 6px 0 0; font-size: 14px; color: #d1d5db; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      background: #1f2933;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 16px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .card h3 { margin-top: 0; }
+    .card p { font-size: 14px; color: #555; }
+
+    .btn {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    .buy { background: #f97316; }
+    .review { background: #2563eb; }
+    .compare { background: #16a34a; }
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 14px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Best Product Deals</h1>
+  <p>Honest reviews • Trusted affiliate links</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Top Picks</a>
+  <a href="#">Reviews</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section class="container">
+  <div class="card">
+    <h3>Sample Product</h3>
+    <p>High quality product with best ratings and value for money.</p>
+    <a href="#" class="btn buy">Check Price</a>
+    <a href="#" class="btn review">Read Review</a>
+    <a href="#" class="btn compare">Compare</a>
+  </div>
+
+  <div class="card">
+    <h3>Another Product</h3>
+    <p>Popular choice among customers with excellent features.</p>
+    <a href="#" class="btn buy">Check Price</a>
+    <a href="#" class="btn review">Read Review</a>
+    <a href="#" class="btn compare">Compare</a>
+  </div>
+</section>
+
+<footer>
+  Disclosure: This website contains affiliate links. We may earn a commission at no extra cost to you.
+</footer>
+
+</body>
+</html>
